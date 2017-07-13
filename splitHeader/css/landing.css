@@ -1,0 +1,167 @@
+body {
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+header {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+}
+
+h1 {
+	position: absolute;
+	text-align: center;
+	margin: 2em auto;
+	left: 0;
+	right: 0;
+	color: #fff;
+	text-transform: uppercase;
+	max-width: 700px;
+}
+
+.header-row {
+	padding: 0;
+	position: absolute;
+	height: 100%;
+	width: 100vw;
+}
+
+.right-col, .left-col {
+	padding: 0;
+	height: 100%;
+}
+
+.left-col {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	background: url('../img/dev.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.left-col:before {
+  	content: "";
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	top: 0%;
+  	left: 0%;
+  	z-index: -1;
+	background: #02AAB0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #00CDAC, #02AAB0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00CDAC, #02AAB0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.right-col {
+	float: right;
+	text-align: right;
+	position: relative;
+	overflow: hidden;
+	background: url('../img/transcription.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.right-col:before {
+  	content: "";
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	top: 0%;
+  	right: 0%;
+  	z-index: -1;
+	background: #F7971E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h2 {
+	padding: 10px 20px;
+	margin-top: 0;
+	background: #434343;
+	color: #fff;
+}
+
+
+.right-col h2 {
+	font-size: 40px;
+	font-weight: 500;
+	font-family: 'Bellefair', serif;
+	padding-right: 5%;
+}
+
+.left-col h2 {
+	font-size: 40px;
+	font-family: 'Oswald', sans-serif;
+	background: #545454;	
+	padding-left: 5%;
+}
+
+
+
+
+.subtitle {
+	padding: 20px;
+	font-size: 18px;
+	max-height: 25vh;
+
+}
+
+#subtitle-right {
+}
+
+#subtitle-left {
+	font-size: 20px;
+}
+
+.upper, .lower {
+	padding: 0;
+	margin: 0;
+}
+
+
+.lower {
+	position: absolute;
+	height: 200px;
+	width: 100%;
+	bottom: 0;
+}
+
+.enter-button {
+	position: absolute;
+	text-align: center;
+  	position: absolute; 
+  	left: 0; 
+  	right: 0; 
+  	top: 1.5em;
+  	bottom: 0;
+	margin: 0 auto;
+  	width: 250px; /* Need a specific value to work */
+  	max-height: 75px;
+  	border: none;
+  	font-size: 26px;
+  	border-radius: 0;
+	background: rgba(255,255,255, .3);
+  	color: #fff;
+  	transition: .3s all ease;
+}
+
+.enter-button:hover {
+	color: #fff;
+	background: rgba(255,255,255, .5);
+  	border: none;
+}
+
+.center {
+	padding: 0 5%; 
+}
