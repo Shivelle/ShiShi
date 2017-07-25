@@ -1,6 +1,51 @@
+
+
 body {
 	margin: 70px auto;
 	background: #333;
 	color: #fff;
 }
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+
+
+#output {
+	visibility: hidden;
+}
+
+#select {
+	border: none;
+	border-radius: 0;
+}
+
+#Input {
+	border: 1px solid #000;
+	border-radius: 0;
+}
+
+.card {
+	border-radius: 0;
+	border: none;
+	background: none;
+}
+
+.card-lbs {
+	background: #395662;
+}
+
+.card-oz {
+	background: #F4A261;
+}
+
+.card-kgs {
+	background: #2A9D8F;
+}
+
+.card-grams {
+	background: #E76F51;
+}
+
 

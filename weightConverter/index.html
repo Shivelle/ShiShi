@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Weight Converter</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
 </head>
@@ -11,50 +11,51 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
-					<h1 class="display-4 text-center mb-3">
+					<h1 class="display-4 text-center mb-5">
 						Weight Converter
 					</h1>
 		
 					<form>
 	                   <div class="form-group">
 	                       <select class="custom-select mb-2 mr-sm-2 mb-sm-0 " id="select">
-	                           <option value="lbs">Pounds</option>
-	                           <option value="grams">Grams</option>
-	                           <option value="kgs">Kilograms</option>
-	                           <option value="oz">Ounces</option>
+	                           <option value="lbs">lbs</option>
+	                           <option value="grams">g</option>
+	                           <option value="kgs">kg</option>
+	                           <option value="oz">oz</option>
 	                       </select>
 	                   </div>
 						<div class="form-group">
 							<input
+							step="1"
 							id="Input" 
 							type="number" 
 							class="form-control form-control-lg" 
-							placeholder="enter pounds">
+							placeholder="Throw me some numbers.">
 						</div><!-- /.form-group -->
 					</form>
 					<div id="output">
-						<div class="card card-primary mb-2">
+						<div class="card card-grams mb-2">
 							<div class="card-block">
 								<h4>Grams:</h4>
 								<div id="gramsOutput">0</div>
 							</div><!-- /.card-block -->
 						</div><!-- /.card -->
 
-						<div class="card card-success mb-2">
+						<div class="card card-kgs mb-2">
 							<div class="card-block">
-								<h4>Kilorams:</h4>
+								<h4>Kilograms:</h4>
 								<div id="kgOutput">0</div>
 							</div><!-- /.card-block -->
 						</div><!-- /.card -->
 
-						<div class="card card-danger mb-2">
+						<div class="card card-oz mb-2">
 							<div class="card-block">
 								<h4>Ounces:</h4>
 								<div id="ozOutput">0</div>
 							</div><!-- /.card-block -->
 						</div><!-- /.card -->
 
-						<div class="card card-warning mb-2">
+						<div class="card card-lbs mb-2">
 							<div class="card-block">
 								<h4>Pounds:</h4>
 								<div id="lbsOutput">0</div>
